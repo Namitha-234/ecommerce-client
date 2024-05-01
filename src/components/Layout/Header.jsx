@@ -1,6 +1,5 @@
 import React from "react";
 import { NavLink, Link } from "react-router-dom";
-import { FaShopify } from "react-icons/fa";
 import { useAuth } from "../../context/auth";
 import toast from "react-hot-toast";
 import SearchInput from "../Form/SearchInput";
@@ -38,7 +37,6 @@ const Header = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
             <Link to="/" className="navbar-brand">
-              <FaShopify />
               Shopify
             </Link>
             <ul className="navbar-nav nav-underline ms-auto mb-2 mb-lg-0">
