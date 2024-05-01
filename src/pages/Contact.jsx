@@ -1,6 +1,5 @@
 import React from "react";
 import Layout from "./../components/Layout/Layout";
-import { BiMailSend, BiPhoneCall, BiSupport } from "react-icons";
 const Contact = () => {
   return (
     <Layout title={"Contact us"}>
@@ -19,13 +18,13 @@ const Contact = () => {
             vaialible
           </p>
           <p className="mt-3">
-            <BiMailSend /> : www.help@shopify.com
+            email : www.help@shopify.com
           </p>
           <p className="mt-3">
-            <BiPhoneCall /> : 012-3456789
+            Phone : 012-3456789
           </p>
           <p className="mt-3">
-            <BiSupport /> : 1800-0000-0000 (toll free)
+            Support : 1800-0000-0000 (toll free)
           </p>
         </div>
       </div>
