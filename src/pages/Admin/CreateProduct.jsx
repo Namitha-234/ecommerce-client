@@ -21,7 +21,7 @@ const CreateProduct = () => {
   //get all category
   const getAllCategory = async () => {
     try {
-      const { data } = await axios.get("/api/v1/category/get-category");
+      const { data } = await axios.get("https://mern-ecommerce-g655.onrender.com/api/v1/category/get-category");
       if (data?.success) {
         setCategories(data?.category);
       }
@@ -47,14 +47,14 @@ const CreateProduct = () => {
       productData.append("photo", photo);
       productData.append("category", category);
       const { data } = axios.post(
-        "/api/v1/product/create-product",
+        "https://mern-ecommerce-g655.onrender.com/api/v1/product/create-product",
         productData
       );
       if (data?.success) {
         toast.error(data?.message);
       } else {
         toast.success("Product Created Successfully");
-        navigate("/dashboard/admin/products");
+        navigate("https://mern-ecommerce-g655.onrender.com/dashboard/admin/products");
       }
     } catch (error) {
       console.log(error);
@@ -103,7 +103,7 @@ const CreateProduct = () => {
                 {photo && (
                   <div className="text-center">
                     <img
-                      src={'https://mern-ecommerce-g655.onrender.com'.createObjectURL(photo)}
+                      src={URL.createObjectURL(photo)}
                       alt="product_photo"
                       height={"200px"}
                       className="img img-responsive"
