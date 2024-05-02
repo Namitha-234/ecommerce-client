@@ -103,7 +103,7 @@ const CreateProduct = () => {
                 {photo && (
                   <div className="text-center">
                     <img
-                      src={URL.createObjectURL(photo)}
+                      src={'https://mern-ecommerce-g655.onrender.com'.createObjectURL(photo)}
                       alt="product_photo"
                       height={"200px"}
                       className="img img-responsive"
