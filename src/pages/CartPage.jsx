@@ -137,7 +137,7 @@ const CartPage = () => {
                     <h5>{auth?.user?.address}</h5>
                     <button
                       className="btn btn-outline-warning"
-                      onClick={() => navigate("https://mern-ecommerce-g655.onrender.com/dashboard/user/profile")}
+                      onClick={() => navigate("/dashboard/user/profile")}
                     >
                       Update Address
                     </button>
@@ -148,7 +148,7 @@ const CartPage = () => {
                   {auth?.token ? (
                     <button
                       className="btn btn-outline-warning"
-                      onClick={() => navigate("https://mern-ecommerce-g655.onrender.com/dashboard/user/profile")}
+                      onClick={() => navigate("/dashboard/user/profile")}
                     >
                       Update Address
                     </button>
