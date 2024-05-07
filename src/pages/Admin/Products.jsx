@@ -35,7 +35,7 @@ const Products = () => {
             {products?.map((p) => (
               <Link
                 key={p._id}
-                to={`https://mern-ecommerce-g655.onrender.com/dashboard/admin/product/${p.slug}`}
+                to={`/dashboard/admin/product/${p.slug}`}
                 className="product-link"
               >
                 <div className="card m-2" style={{ width: "18rem" }}>
